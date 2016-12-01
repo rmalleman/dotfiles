@@ -1,4 +1,10 @@
-syntax on
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree'
+Plug 'altercation/vim-colors-solarized'
+Plug 'chase/vim-ansible-yaml'
+Plug 'klen/python-mode'
+Plug 'valloric/youcompleteme'
+call plug#end()
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
