@@ -1,4 +1,9 @@
-set number "line numbers"
+set number """line numbers
+set numberwidth=4
+
+"""line at 120 characters
+set textwidth=120
+set colorcolumn=+1
 
 "move between windows"
 nnoremap <C-j> <C-w><C-j>
@@ -16,10 +21,13 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-"""let g:syntastic_always_populate_loc_list = 1
-"""let g:syntastic_auto_loc_list = 1
-"""let g:syntastic_check_on_open = 1
-"""let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" tab stops html
+autocmd Filetype html setlocal ts=4 sts=4 sw=4
 
 call plug#begin('~/.vim/plugged')
 Plug 'htacg/tidy-html5'
@@ -40,3 +48,5 @@ Plug 'bling/vim-airline'
 Plug 'pangloss/vim-javascript'
 Plug 'godlygeek/tabular'
 call plug#end()
+let g:pymode_options_colorcolumn = 0
+
