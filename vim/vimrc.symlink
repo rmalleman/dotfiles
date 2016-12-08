@@ -29,8 +29,14 @@ let g:syntastic_check_on_wq = 0
 " tab stops html
 autocmd Filetype html setlocal ts=4 sts=4 sw=4
 
+" save with sudo 
+noremap <Leader>W :w !sudo tee % > /dev/null
+
+
 call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdcommenter'
 Plug 'htacg/tidy-html5'
+Plug 'tpope/vim-fugitive'
 Plug 'othree/html5.vim'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
