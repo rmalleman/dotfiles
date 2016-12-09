@@ -1,7 +1,4 @@
 cask_args appdir: '/Applications'
-
-
-
 brew 'ack'
 brew 'coreutils'
 brew 'go'
@@ -21,3 +18,4 @@ brew 'vim'
 brew 'macvim'
 brew 'python'
 brew 'python3'
+brew 'npm'
