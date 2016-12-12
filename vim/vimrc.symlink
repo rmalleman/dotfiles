@@ -26,12 +26,30 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" syntastic checkers
+let g:syntastic_html_tidy_exec='/usr/local/bin/tidy'
 " tab stops html
 autocmd Filetype html setlocal ts=4 sts=4 sw=4
 
 " save with sudo 
 noremap <Leader>W :w !sudo tee % > /dev/null
 
+" make backspace work correctly
+set backspace=indent,eol,start
+
+if !exists('g:syntastic_html_tidy_blocklevel_tags')
+  let g:syntastic_html_tidy_blocklevel_tags = []
+endif
+
+if !exists('g:syntastic_html_tidy_ignore_errors')
+  let g:syntastic_html_tidy_ignore_errors = []
+endif
+
+" proprietary html attributes
+let g:syntastic_html_tidy_ignore_errors += [
+	\'proprietary attribute "ng-"',
+	\'prorrietary attribute "md-"',
+\]
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdcommenter'
@@ -56,6 +74,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'bling/vim-airline'
 Plug 'pangloss/vim-javascript'
 Plug 'godlygeek/tabular'
+Plug 'mustache/vim-mustache-handlebars'
 call plug#end()
 let g:pymode_options_colorcolumn = 0
 
