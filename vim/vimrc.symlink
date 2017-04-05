@@ -75,6 +75,7 @@ Plug 'bling/vim-airline'
 Plug 'pangloss/vim-javascript'
 Plug 'godlygeek/tabular'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'derekwyatt/vim-scala'
 call plug#end()
 let g:pymode_options_colorcolumn = 0
 
