@@ -28,3 +28,6 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+#set dark mode
+defaults write "Apple Global Domain" "AppleInterfaceStyle" "Dark"
+
