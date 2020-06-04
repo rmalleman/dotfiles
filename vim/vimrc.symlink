@@ -56,24 +56,16 @@ let g:syntastic_html_tidy_ignore_errors += [
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdcommenter'
-Plug 'jmcantrell/vim-virtualenv'
-Plug 'dbext.vim'
-Plug 'gregsexton/matchtag'
 Plug 'htacg/tidy-html5'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 Plug 'altercation/vim-colors-solarized'
 Plug 'chase/vim-ansible-yaml'
 Plug 'klen/python-mode'
-Plug 'valloric/youcompleteme'
-Plug 'udalov/kotlin-vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'bling/vim-airline'
 Plug 'godlygeek/tabular'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'derekwyatt/vim-scala'
 call plug#end()
 let g:pymode_options_colorcolumn = 0
 

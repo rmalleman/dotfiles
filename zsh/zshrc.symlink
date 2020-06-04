@@ -39,3 +39,5 @@ do
 done
 
 unset config_files
+
+export DYLD_LIBRARY_PATH=/usr/local/opt/openssl/lib:$DYLD_LIBRARY_PATH
