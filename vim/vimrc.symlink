@@ -1,9 +1,7 @@
 set number """line numbers
 set numberwidth=4
 
-"""line at 120 characters
-set textwidth=120
-set colorcolumn=+1
+set expandtab
 
 "move between windows"
 nnoremap <C-j> <C-w><C-j>
@@ -44,6 +42,7 @@ Plug 'klen/python-mode'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'bling/vim-airline'
 Plug 'godlygeek/tabular'
+Plug 'hashivim/vim-packer'
 call plug#end()
 let g:pymode_options_colorcolumn = 0
 
