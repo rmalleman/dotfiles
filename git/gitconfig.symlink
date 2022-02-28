@@ -11,6 +11,7 @@
         count   = !git shortlog -sn
 	accept-ours = "!f() { git checkout --ours -- \"${@:-.}\"; git add -u \"${@:-.}\"; }; f"
 	conflicts = !git ls-files -u | cut -f 2 | sort -u
+        shit = !git commit --amend --no-edit
 [color]
         diff = auto
         status = auto
