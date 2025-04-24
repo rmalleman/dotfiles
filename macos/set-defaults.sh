@@ -23,8 +23,15 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Run the screensaver if we're in the bottom right hot corner.
 defaults write com.apple.dock wvous-bl-corner -int 5
-defaults write com.apple.dock wvous-bl-modifier -int 13
+defaults write com.apple.dock wvous-bl-modifier -int 0
 
 #set dark mode
 defaults write "Apple Global Domain" "AppleInterfaceStyle" "Dark"
 
+
+#idle time before lock
+defaults write com.apple.screensaver idleTime -int 180
+#enable password on wake
+defaults write com.apple.screensaver askForPassword -int 1
+# no password delay
+defaults write com.apple.screensaver askForPasswordDelay -int 0

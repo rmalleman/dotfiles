@@ -7,7 +7,6 @@
         co = checkout
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
 	accept-ours = "!f() { git checkout --ours -- \"${@:-.}\"; git add -u \"${@:-.}\"; }; f"
 	conflicts = !git ls-files -u | cut -f 2 | sort -u
@@ -20,10 +19,15 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+        pager = delta
+[delta]
+        navigate = true;
 [apply]
         whitespace = nowarn
 [mergetool]
         keepBackup = false
+[merge]
+    conflictstyle = zdiff3
 [difftool]
         prompt = false
 [help]
@@ -34,3 +38,4 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+

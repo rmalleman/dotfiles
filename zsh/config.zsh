@@ -35,3 +35,4 @@ setopt complete_aliases
 
 bindkey -v
 bindkey '^r' history-incremental-search-backward
+source <(fzf --zsh)
