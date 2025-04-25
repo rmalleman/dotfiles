@@ -32,17 +32,12 @@ set backspace=indent,eol,start
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdcommenter'
-Plug 'htacg/tidy-html5'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 Plug 'altercation/vim-colors-solarized'
-Plug 'chase/vim-ansible-yaml'
-Plug 'klen/python-mode'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'bling/vim-airline'
-Plug 'godlygeek/tabular'
-Plug 'hashivim/vim-packer'
 call plug#end()
 let g:pymode_options_colorcolumn = 0
 
